@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Attendance System Using Face Recognition</title>
+    <meta name="description" content="AI-powered automatic attendance solution for schools, colleges & offices.">
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="home.html" class="logo">SmartAttendance<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <!-- User Actions -->
+                <li><a href="#" class="nav-feature" data-feature="dashboard"><i class="fas fa-chart-line"></i>
+                        Dashboard</a></li>
+                <li><a href="#" class="nav-feature" data-feature="notifications"><i class="fas fa-bell"></i>
+                        Notifications</a></li>
+                <li><a href="#" class="nav-feature" data-feature="profile"><i class="fas fa-user-circle"></i>
+                        Profile</a></li>
+                <li><a href="index.html" class="btn-nav" style="background: #ff4757;">Logout</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="container hero-content">
+            <h1 class="fade-in">Smart Attendance System <br> Using <span class="gradient-text">Face Recognition</span>
+            </h1>
+            <p class="subtitle fade-in delay-1">AI-powered automatic attendance solution for schools, colleges & offices
+            </p>
+            <a href="#features" class="btn-primary fade-in delay-2">Explore Features</a>
+        </div>
+        <div class="hero-bg-shape"></div>
+    </header>
+
+    <!-- Project Overview -->
+    <section id="overview" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Project Overview</h2>
+                <p>A revolutionary way to manage attendance efficiently and securely.</p>
+            </div>
+
+            <div class="overview-content">
+                <div class="overview-text fade-in-scroll">
+                    <h3>Why this system?</h3>
+                    <p>
+                        The <strong>Smart Attendance System</strong> leverages cutting-edge computer vision and deep
+                        learning technologies to automate the traditional attendance process.
+                        It eliminates manual errors, saves valuable class time, and prevents proxy attendance.
+                        Ideal for educational institutions and corporate offices looking for a contactless, secure, and
+                        fast solution.
+                    </p>
+                </div>
+
+                <div class="highlight-grid">
+                    <div class="card highlight-card fade-in-scroll">
+                        <i class="fas fa-expand-arrows-alt icon-highlight"></i>
+                        <h4>AI-Based Face Detection</h4>
+                    </div>
+                    <div class="card highlight-card fade-in-scroll">
+                        <i class="fas fa-bolt icon-highlight"></i>
+                        <h4>Fast & Accurate</h4>
+                    </div>
+                    <div class="card highlight-card fade-in-scroll">
+                        <i class="fas fa-check-circle icon-highlight"></i>
+                        <h4>Auto Attendance</h4>
+                    </div>
+                    <div class="card highlight-card fade-in-scroll">
+                        <i class="fas fa-shield-alt icon-highlight"></i>
+                        <h4>Secure Data</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Features</h2>
+                <p>Click on any feature to see a live demo!</p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card fade-in-scroll" data-feature="detection">
+                    <div class="icon-box"><i class="fas fa-camera"></i></div>
+                    <h3>Face Detection</h3>
+                    <p>Detects faces in real-time using OpenCV.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card fade-in-scroll" data-feature="recognition">
+                    <div class="icon-box"><i class="fas fa-id-badge"></i></div>
+                    <h3>Face Recognition</h3>
+                    <p>98% accurate identification using deep learning.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card fade-in-scroll" data-feature="registration">
+                    <div class="icon-box"><i class="fas fa-user-plus"></i></div>
+                    <h3>Easy Registration</h3>
+                    <p>Simple enrollment module for new users.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-card fade-in-scroll" data-feature="logging">
+                    <div class="icon-box"><i class="fas fa-clipboard-list"></i></div>
+                    <h3>Attendance Logging</h3>
+                    <p>Automatically logs entry time and date.</p>
+                </div>
+                <!-- Feature 5 -->
+                <div class="feature-card fade-in-scroll" data-feature="dashboard">
+                    <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                    <h3>Real-Time Dashboard</h3>
+                    <p>Live view of attendance status.</p>
+                </div>
+                <!-- Feature 6 -->
+                <div class="feature-card fade-in-scroll" data-feature="database">
+                    <div class="icon-box"><i class="fas fa-database"></i></div>
+                    <h3>Database Storage</h3>
+                    <p>Supports Excel, SQLite, and MySQL.</p>
+                </div>
+                <!-- Feature 7 -->
+                <div class="feature-card fade-in-scroll" data-feature="reports">
+                    <div class="icon-box"><i class="fas fa-file-alt"></i></div>
+                    <h3>Monthly Reports</h3>
+                    <p>Generate detailed analytics and reports.</p>
+                </div>
+                <!-- Feature 8 -->
+                <div class="feature-card fade-in-scroll" data-feature="notifications">
+                    <div class="icon-box"><i class="fas fa-bell"></i></div>
+                    <h3>Notifications</h3>
+                    <p>Email/SMS alerts for absentees.</p>
+                </div>
+                <!-- Feature 9 -->
+                <div class="feature-card fade-in-scroll" data-feature="admin">
+                    <div class="icon-box"><i class="fas fa-user-shield"></i></div>
+                    <h3>Admin System</h3>
+                    <p>Secure login for system administrators.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="how-it-works" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>A seamless four-step process.</p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="step fade-in-scroll">
+                    <div class="step-icon"><i class="fas fa-video"></i></div>
+                    <h4>1. Capture</h4>
+                    <p>Camera captures face</p>
+                </div>
+                <div class="connector"></div>
+                <div class="step fade-in-scroll">
+                    <div class="step-icon"><i class="fas fa-brain"></i></div>
+                    <h4>2. Analyze</h4>
+                    <p>AI Detects & Recognizes</p>
+                </div>
+                <div class="connector"></div>
+                <div class="step fade-in-scroll">
+                    <div class="step-icon"><i class="fas fa-check-double"></i></div>
+                    <h4>3. Mark</h4>
+                    <p>Attendance Auto-Marks</p>
+                </div>
+                <div class="connector"></div>
+                <div class="step fade-in-scroll">
+                    <div class="step-icon"><i class="fas fa-server"></i></div>
+                    <h4>4. Store</h4>
+                    <p>Data saved to DB</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase / Demo -->
+    <section id="showcase" class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>System Screenshots</h2>
+                <p>A glimpse into the application interface.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in-scroll">
+                    <div class="placeholder-img">Face Detection Preview</div>
+                    <p class="caption">Real-time Face Detection</p>
+                </div>
+                <div class="gallery-item fade-in-scroll">
+                    <div class="placeholder-img">Recognition Window</div>
+                    <p class="caption">Recognition & Identification</p>
+                </div>
+                <div class="gallery-item fade-in-scroll">
+                    <div class="placeholder-img">Attendance Dashboard</div>
+                    <p class="caption">Admin Dashboard</p>
+                </div>
+                <div class="gallery-item fade-in-scroll">
+                    <div class="placeholder-img">Daily Report</div>
+                    <p class="caption">Automated Reports</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="tech-stack" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technology Stack</h2>
+                <p>Built with powerful tools and libraries.</p>
+            </div>
+
+            <div class="tech-badges fade-in-scroll">
+                <span class="badge">Python</span>
+                <span class="badge">OpenCV</span>
+                <span class="badge">face_recognition</span>
+                <span class="badge">Deep Learning</span>
+                <span class="badge">Tkinter / PyQt</span>
+                <span class="badge">SQLite / MySQL</span>
+                <span class="badge">Pandas</span>
+                <span class="badge">Matplotlib</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section id="advantages" class="section bg-gradient">
+        <div class="container">
+            <div class="section-header text-white">
+                <h2>Advantages</h2>
+            </div>
+
+            <ul class="advantages-list fade-in-scroll">
+                <li><i class="fas fa-check"></i> Eliminates manual attendance</li>
+                <li><i class="fas fa-check"></i> Saves valuable time</li>
+                <li><i class="fas fa-check"></i> Reduces proxy attendance</li>
+                <li><i class="fas fa-check"></i> Highly accurate (98%+)</li>
+                <li><i class="fas fa-check"></i> Works offline</li>
+                <li><i class="fas fa-check"></i> Easy to deploy and use</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p>Interested in this project? Send a message.</p>
+            </div>
+
+            <form class="contact-form fade-in-scroll" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary btn-block">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Smart Attendance System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Feature Demo Modal -->
+    <div id="featureModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody">
+                <!-- Dynamic Content Here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Smart Attendance System</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-body">
+
+    <div class="login-container fade-in">
+        <div class="login-header">
+            <h2>Welcome Back</h2>
+            <p>Smart Attendance System</p>
+        </div>
+
+        <div class="login-tabs">
+            <button class="tab-btn active" data-tab="student">Student</button>
+            <button class="tab-btn" data-tab="teacher">Teacher</button>
+        </div>
+
+        <div class="login-content">
+            <!-- Student Login Form -->
+            <form id="student-login" class="login-form active">
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Student ID" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn-login">Login as Student</button>
+            </form>
+
+            <!-- Teacher Login Form -->
+            <form id="teacher-login" class="login-form">
+                <div class="input-group">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <input type="text" placeholder="Teacher ID" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn-login">Login as Teacher</button>
+            </form>
+        </div>
+
+        <div class="login-footer">
+            <a href="#">Forgot Password?</a>
+            <p style="margin-top: 10px; font-size: 0.8rem; color: #888;">(Demo Password: 12345)</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
